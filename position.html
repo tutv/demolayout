@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		div p {
+			color: blue;
+		}
+
+		p {
+			color: red;
+		}
+
+		.relative {
+			background: #eee;
+			padding: 20px;
+			position: static;
+		}
+
+		.absolute {
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			background-color: red;
+			padding: 10px;
+			border: 2px solid green;
+		}
+		
+		.relative-x {
+			position: static;
+		}
+
+		.ok {
+			height: 1000px;
+			background: #eee;
+		}
+
+		body {
+			position: static;
+		}
+	</style>
+</head>
+<body>
+	<div style="padding: 20px; background-color: blue;">
+		Box này không liên quan gì cả =))
+	</div>
+	<div class="relative-x">
+		<div class="relative">
+			<p>skdjflksdjfsdlkfj</p>
+			<div class="absolute">
+				ódkfjsdlkfjsdlkfjsdklfjsd
+			</div>
+		</div>
+	</div>
+
+	<div class="ok">
+		sdfkjsd
+	</div>
+</body>
+</html>
